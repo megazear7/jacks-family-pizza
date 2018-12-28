@@ -1,6 +1,6 @@
 <h2>Menu</h2>
 
-<% public.menu._data.forEach(food => { %>
+<% Object.keys(public.menu._data).map(key => public.menu._data[key]).forEach(food => { %>
 
   <a href="/menu/<%- food.path %>.html">
     <h3><%- food.title %><h3>
