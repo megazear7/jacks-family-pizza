@@ -1,10 +1,11 @@
-[
-  {
+{
+  "title": "Menu",
+  "pizza": {
     "path": "pizza",
     "title": "Pizza"
   },
-  {
+  "pop": {
     "path": "pop",
     "title": "Pop"
   }
-]
+}
