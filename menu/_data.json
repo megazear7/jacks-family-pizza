@@ -2,10 +2,12 @@
   "title": "Menu",
   "pizza": {
     "path": "pizza",
-    "title": "Pizza"
+    "title": "Pizza",
+    "image": "/images/food-being-passsed.jpg"
   },
   "pop": {
     "path": "pop",
-    "title": "Pop"
+    "title": "Pop",
+    "image": "/images/food-being-passsed.jpg"
   }
 }
