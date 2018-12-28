@@ -1,0 +1,5 @@
+<div class="breadcrumbs">
+  <% current.path.forEach((pathSegment, index, array) => { %>
+    <a href="/<%- array.slice(0, index+1).join("/") %>.html"><%- pathSegment %>
+  <% }); %>
+</div>
