@@ -1,1 +1,9 @@
 <h2>Menu</h2>
+
+<% public.menu._data.forEach(food => { %>
+
+  <a href="/menu/<%- food.path %>.html">
+    <h3><%- food.title %><h3>
+  </a>
+
+<% }); %>
