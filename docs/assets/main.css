@@ -1,0 +1,167 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  font-family: "Helvetica";
+  text-align: center;
+  padding: 0;
+  padding-bottom: 50rem;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h1.primary-page {
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  text-align: center;
+  font-size: 6rem;
+  text-shadow: 3px 3px 3px #000000;
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #76323f;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+hr {
+  border: 0;
+  border-bottom: #CCC solid 1px;
+  margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.card-image {
+  width: 49%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.header {
+  padding: 1rem;
+}
+
+.navigation {
+  padding: 8px;
+  background-color: #c09f80;
+  color: #f4f4f7;
+  font-size: 1.75rem;
+  box-shadow: 0 4px 2px -2px gray;
+  margin-bottom: 5px;
+}
+
+.navigation a {
+  padding: 0 30px;
+}
+
+.navigation a.active {
+  border-bottom: 8px solid #76323f;
+}
+
+.content {
+  padding: 0 1rem 1rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+.breadcrumbs a:not(:last-child):after {
+  margin: 0 0.5rem;
+  content: ">"
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.primary-page-image {
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 1%;
+  text-align: center;
+  font-size: 0;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 0;
+  background: #76323f;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  margin: 0;
+  height: 3rem;
+  transition: all 0.3s;
+}
+
+.card p {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 1rem;
+  background: #76323f;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card:hover p {
+  opacity: 1;
+}
+
+.card:hover h3 {
+  bottom: 50%;
+}
