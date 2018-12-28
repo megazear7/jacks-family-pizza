@@ -6,6 +6,19 @@
   </head>
 
   <body>
-    <%- yield %>
+    <a href="/">
+      <h1>Jacks Family Pizza</h1>
+    </a>
+
+    <div class="navigation">
+      <a href="/" class="<%- current.source === 'index' && current.path.length === 1 ? 'active' : ''%>">Home</a>
+      <a href="/menu.html" class="<%- current.source === 'menu' ? 'active' : ''%>">Menu</a>
+      <a href="/locations.html" class="<%- current.source === 'locations' ? 'active' : ''%>">Locations</a>
+      <a href="/story.html" class="<%- current.source === 'story' ? 'active' : ''%>">Story</a>
+    </div>
+
+    <div class="content">
+      <%- yield %>
+    </div>
   </body>
 </html>
