@@ -115,3 +115,31 @@ a:visited {
 .primary-page-image {
   margin: 0 auto;
 }
+
+.card {
+  position: relative;
+  width: 49%;
+  display: inline-block;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 0;
+  background: #76323f;
+  width: 100%;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: white;
+  margin: 0;
+  height: 3.5rem;
+  transition: all 0.3s;
+}
+
+.card:hover {
+}
+
+.card:hover h3 {
+  height: 100%;
+}

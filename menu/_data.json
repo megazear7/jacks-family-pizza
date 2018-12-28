@@ -10,5 +10,15 @@
     "path": "pop",
     "title": "Pop",
     "image": "/assets/images/drink.jpg"
+  },
+  "salad": {
+    "path": "salad",
+    "title": "Salad",
+    "image": "/assets/images/salad.jpg"
+  },
+  "pop": {
+    "path": "pop",
+    "title": "Pop",
+    "image": "/assets/images/drink.jpg"
   }
 }
