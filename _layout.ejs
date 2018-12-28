@@ -9,6 +9,9 @@
     <%- partial("_structure/navigation") %>
 
     <div class="content">
+      <% if (current.source != "index") { %>
+        <h2><%- public[current.source]._data.title %></h2>
+      <% } %>
       <%- yield %>
     </div>
 
