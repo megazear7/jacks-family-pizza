@@ -1,19 +1,69 @@
-body{
+body {
   font-family: "Helvetica";
   text-align: center;
-  padding: 50px 20px 0;
+  padding: 0;
   background: #f4f4f7;
   color: #444;
   margin: 0;
 }
 
-h1{
+h1 {
   font-size: 65px;
   line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+  margin: 20px 0 10px 0;
 }
 
-h3{
+h3 {
   font-weight: 300;
+}
+
+hr {
+  border: 0;
+  border-bottom: #CCC solid 1px;
+  margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.card-image {
+  height: 100%;
+}
+
+.card-container {
+  height: 140px;
+}
+
+@media only screen and (min-width: 900px) {
+  .card-container {
+    height: 175px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .card-container {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card-container {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .card-container {
+    height: 300px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
 }
