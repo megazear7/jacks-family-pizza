@@ -1,13 +1,14 @@
 {
   "title": "Menu",
+  "image": "/assets/images/food-being-passed.jpg",
   "pizza": {
     "path": "pizza",
     "title": "Pizza",
-    "image": "/images/food-being-passsed.jpg"
+    "image": "/assets/images/pizza-slices.jpg"
   },
   "pop": {
     "path": "pop",
     "title": "Pop",
-    "image": "/images/food-being-passsed.jpg"
+    "image": "/assets/images/drink.jpg"
   }
 }
