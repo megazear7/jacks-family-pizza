@@ -6,9 +6,11 @@
   </head>
 
   <body>
-    <a href="/">
-      <h1>Jacks Family Pizza</h1>
-    </a>
+    <div class="header">
+      <a href="/">
+        <h1>Jacks Family Pizza</h1>
+      </a>
+    </div>
 
     <div class="navigation">
       <a href="/" class="<%- current.path[0] === 'index' ? 'active' : ''%>">Home</a>
@@ -20,7 +22,7 @@
     <div class="content">
       <%- yield %>
     </div>
-    
+
     <div class="footer">
       <%- partial("_breadcrumbs") %>
       <hr>
