@@ -4,21 +4,21 @@
   "pizza": {
     "path": "pizza",
     "title": "Pizza",
-    "image": "/assets/images/pizza-slices.jpg"
+    "image": "/assets/images/4_3/pizza-slices.jpg"
   },
   "pop": {
     "path": "pop",
     "title": "Pop",
-    "image": "/assets/images/drink.jpg"
+    "image": "/assets/images/4_3/drink.jpg"
   },
   "salad": {
     "path": "salad",
     "title": "Salad",
-    "image": "/assets/images/salad.jpg"
+    "image": "/assets/images/4_3/salad.jpg"
   },
   "beer": {
     "path": "beer",
     "title": "Beer",
-    "image": "/assets/images/beer.jpg"
+    "image": "/assets/images/4_3/beer.jpg"
   }
 }
