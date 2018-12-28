@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- partial("../_structure/head") %>
+  </head>
+
+  <body>
+    <%- partial("../_structure/header") %>
+    <%- partial("../_structure/navigation") %>
+
+    <div class="content">
+      <h2><%- public.menu._data[current.source].title %></h2>
+      <%- yield %>
+    </div>
+
+    <%- partial("../_structure/footer") %>
+  </body>
+</html>
