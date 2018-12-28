@@ -1,4 +1,21 @@
-<a class="card" href="<%- url %>">
-  <img src="<%- image %>">
-  <h3><%- title %></h3>
-</a>
+<% if (url) { %>
+  <a class="card" href="<%- url %>">
+    <img src="<%- image %>">
+    <% if (title) { %>
+      <h3><%- title %></h3>
+    <% } %>
+    <% if (description) { %>
+      <p><%- description %></p>
+    <% } %>
+  </a>
+<% } else { %>
+  <div class="card">
+    <img src="<%- image %>">
+    <% if (title) { %>
+      <h3><%- title %></h3>
+    <% } %>
+    <% if (description) { %>
+      <p><%- description %></p>
+    <% } %>
+  </div>
+<% } %>

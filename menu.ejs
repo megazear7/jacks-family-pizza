@@ -2,5 +2,10 @@
   .map(key => public.menu._data[key])
   .filter(value => typeof value === "object")
   .forEach(food => { %>
-  <%- partial("_components/card", { image: food.image, title: food.title, url: '/menu/'+food.path+'.html' }) %>
+  <%- partial("_components/card", {
+    image: food.image,
+    title: food.title,
+    url: '/menu/'+food.path+'.html',
+    description: ''
+  }) %>
 <% }); %>
