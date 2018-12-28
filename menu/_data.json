@@ -16,9 +16,9 @@
     "title": "Salad",
     "image": "/assets/images/salad.jpg"
   },
-  "pop": {
-    "path": "pop",
-    "title": "Pop",
-    "image": "/assets/images/drink.jpg"
+  "beer": {
+    "path": "beer",
+    "title": "Beer",
+    "image": "/assets/images/beer.jpg"
   }
 }
