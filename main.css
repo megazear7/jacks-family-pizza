@@ -15,7 +15,7 @@ body {
   font-family: "Helvetica";
   text-align: center;
   padding: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 50rem;
   background: #f4f4f7;
   color: #444;
   margin: 0;
@@ -84,11 +84,6 @@ a:visited {
 .breadcrumbs a:not(:last-child):after {
   margin: 0 0.5rem;
   content: ">"
-}
-
-.pre-footer {
-  min-height: 100%;
-  margin-top: 2rem;
 }
 
 .footer {
