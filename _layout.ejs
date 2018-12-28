@@ -7,11 +7,7 @@
   </head>
 
   <body>
-    <div class="header">
-      <a href="/">
-        <h1>Jacks Family Pizza</h1>
-      </a>
-    </div>
+    <%- partial("_structure/header") %>
 
     <div class="navigation">
       <a href="/" class="<%- current.path[0] === 'index' ? 'active' : ''%>">Home</a>
