@@ -75,7 +75,9 @@ a:visited {
 }
 
 .navigation {
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
   background-color: #c09f80;
   color: #f4f4f7;
   font-size: 1.75rem;
@@ -85,10 +87,15 @@ a:visited {
 
 .navigation a {
   padding: 0 30px;
+  display: inline-block;
 }
 
 .navigation a.active {
-  border-bottom: 8px solid #76323f;
+  border-bottom: 8px solid rgb(118,50,63);
+}
+
+.navigation a:hover {
+  border-bottom: 8px solid rgba(118,50,63,0.5);
 }
 
 .content {
