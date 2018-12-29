@@ -110,6 +110,10 @@ a:visited {
   }
 }
 
+.footer-content {
+  padding: 0.5rem;
+}
+
 .breadcrumbs a:not(:last-child):after {
   margin: 0 0.5rem;
   content: ">"
