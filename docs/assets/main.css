@@ -82,7 +82,6 @@ a:visited {
   color: #f4f4f7;
   font-size: 1.75rem;
   box-shadow: 0 4px 2px -2px gray;
-  margin-bottom: 5px;
 }
 
 .navigation a {
@@ -99,11 +98,20 @@ a:visited {
 }
 
 .content {
-  padding: 0 1rem 1rem 1rem;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 0.5rem;
   text-align: left;
   position: relative;
+}
+
+@media only screen and (min-width: 900px) {
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.footer-content {
+  padding: 0.5rem;
 }
 
 .breadcrumbs a:not(:last-child):after {
