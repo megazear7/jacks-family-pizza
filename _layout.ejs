@@ -9,7 +9,7 @@
     <%- partial("_structure/navigation") %>
 
     <div class="content">
-      <%- ! ["index", "404"].includes(current.source) ? partial("_structure/primary-page-header") : ""%>
+      <%- ! ["index", "404", "README"].includes(current.source) ? partial("_structure/primary-page-header") : ""%>
       <%- yield %>
     </div>
 

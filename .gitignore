@@ -1,1 +1,4 @@
 .DS_Store
+
+# Github requires the readme to be README.md but harp will compile this file so we wont to remove the compiled version from git.
+docs/README.html
