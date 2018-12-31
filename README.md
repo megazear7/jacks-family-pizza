@@ -11,14 +11,14 @@ git clone https://github.com/megazear7/jacks-family-pizza.git
 
 ### Development
 ```
-harp server ./
+harp server src
 ```
 
 Go to localhost:9000
 
 ### Deployment
 ```bash
-harp compile ./ docs
+harp compile src docs
 git add .
 git commit -m "Recompiled."
 git push origin master
