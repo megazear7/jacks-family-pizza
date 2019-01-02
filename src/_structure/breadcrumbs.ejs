@@ -1,7 +1,17 @@
 <div class="breadcrumbs">
   <% current.path.forEach((pathSegment, index, array) => { %>
     <a href="/<%- array.slice(0, index+1).join("/") %>.html">
-      <%- array.slice(0, index+1).reduce((oldVal, newVal) => oldVal[newVal] && oldVal[newVal]._data ? oldVal[newVal]._data : oldVal[newVal] ? oldVal[newVal] : oldVal, public).title %>
+      <%-
+        array.slice(0, index+1).reduce(
+          (oldVal, newVal) =>
+            oldVal[newVal] && oldVal[newVal]._data
+              ? oldVal[newVal]._data
+              : oldVal[newVal]
+                ? oldVal[newVal]
+                : oldVal
+          , public
+        ).title
+      %>
     </a>
   <% }); %>
 </div>

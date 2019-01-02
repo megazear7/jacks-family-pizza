@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- partial("../../_structure/head") %>
+  </head>
+
+  <body>
+    <%- partial("../../_structure/header") %>
+    <%- partial("../../_structure/navigation") %>
+
+    <div class="content">
+      <%- yield %>
+    </div>
+
+    <%- partial("../../_structure/footer") %>
+  </body>
+</html>
