@@ -1,3 +1,6 @@
 {
-  "title": "Jacks Family Pizza"
+  "title": "Jacks Family Pizza",
+  "home": "Home",
+  "jsPath": "/assets/main.js",
+  "cssPath": "/assets/main.css"
 }
