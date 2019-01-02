@@ -1,17 +1,22 @@
 <div class="breadcrumbs">
+  <a href="/"><%- public._data.home %></a>
   <% current.path.forEach((pathSegment, index, array) => { %>
     <a href="/<%- array.slice(0, index+1).join("/") %>.html">
-      <%-
-        array.slice(0, index+1).reduce(
-          (oldVal, newVal) =>
-            oldVal[newVal] && oldVal[newVal]._data
-              ? oldVal[newVal]._data
-              : oldVal[newVal]
-                ? oldVal[newVal]
-                : oldVal
-          , public
-        ).title
+      <%
+        var currentData = array
+          .slice(0, index + 1)
+          .reduce((oldVal, newVal) => oldVal && oldVal[newVal] ? oldVal[newVal] : {}, public)
+          ._data;
+        var title = currentData ? currentData.title : false;
+        var parentData = array
+          .slice(0, index)
+          .reduce((oldVal, newVal) => oldVal && oldVal[newVal] ? oldVal[newVal] : {}, public)
+          ._data;
+        let parentDefinedTitle = parentData && parentData[pathSegment]
+          ? parentData[pathSegment].title
+          : "";
       %>
+      <%- title ? title : parentDefinedTitle %>
     </a>
   <% }); %>
 </div>
