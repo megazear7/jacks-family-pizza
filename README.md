@@ -1,7 +1,7 @@
 ## Jacks Family Pizza
 > An example pizza website created as a static website using harpjs.
 
-jacksfamilypizza.alexlockhart.me
+[jacksfamilypizza.alexlockhart.me](https://jacksfamilypizza.alexlockhart.me)
 
 ### Setup
 ```
@@ -23,9 +23,6 @@ git add .
 git commit -m "Recompiled."
 git push origin master
 ```
-
-Go to jacksfamilypizza.alexlockhart.me
-
 
 ### Implementation
 This is using the Harp static site generator available at harpjs.com
