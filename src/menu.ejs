@@ -1,11 +1,13 @@
-<% Object.keys(public.menu._data)
-  .map(key => public.menu._data[key])
-  .filter(value => typeof value === "object")
-  .forEach(food => { %>
-  <%- partial("_components/card", {
-    image: food.image,
-    title: food.title,
-    url: '/menu/'+food.path+'.html',
-    description: ''
-  }) %>
-<% }); %>
+<div class="card-container">
+  <% Object.keys(public.menu._data)
+    .map(key => public.menu._data[key])
+    .filter(value => typeof value === "object")
+    .forEach(food => { %>
+    <%- partial("_components/card", {
+      image: food.image,
+      title: food.title,
+      url: '/menu/'+food.path+'.html',
+      description: ''
+    }) %>
+  <% }); %>
+</div>

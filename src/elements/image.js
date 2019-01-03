@@ -7,7 +7,7 @@ export default class JackImage extends HTMLElement {
     shadowRoot.innerHTML = this.getTemplate();
 
     const src = `/assets/images/${this.getDimensions()}/${this.getImage()}.jpg`;
-    this.div = this.shadowRoot.querySelector('div');
+    this.container = this.shadowRoot.getElementById('container');
     this.img = this.shadowRoot.querySelector('img');
     this.img.src = src;
     this.img.complete
@@ -21,7 +21,7 @@ export default class JackImage extends HTMLElement {
   }
 
   onLoaded() {
-    this.div.classList.remove('loading');
+    //this.container.classList.remove('loading');
   }
 
   getImage() {
@@ -32,19 +32,34 @@ export default class JackImage extends HTMLElement {
     return this.getAttribute('dimensions') ? this.getAttribute('dimensions') : DEFAULT_SIZE;
   }
 
+  getCalculatedDimensions() {
+    const x = this.getDimensions().split("_")[0];
+    const y = this.getDimensions().split("_")[1];
+
+    return y / x;
+  }
+
   getTemplate() {
     return `
       <style>
-        img {
-          width: 100%;
+        :host {
+          display: block;
         }
 
-        div.loading {
-          padding-bottom: calc(100% * (3/4));
-          background-color: grey;
+        #container {
+          width: 100%;
+          height: 0;
+          padding-bottom: calc(100% * ${this.getCalculatedDimensions()});
+          position: relative;
+        }
+
+        img {
+          width: 100%;
+          position: absolute;
+          left: 0;
         }
       </style>
-      <div class="loading">
+      <div id="container" class="loading">
         <img>
       </div>
     `

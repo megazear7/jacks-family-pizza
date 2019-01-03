@@ -130,16 +130,29 @@ a:visited {
 }
 
 .primary-page-image {
-  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .card {
   position: relative;
-  width: 49%;
   display: inline-block;
   margin-bottom: 1%;
   text-align: center;
   font-size: 0;
+}
+
+.card-container .card {
+  /* TODO Why is the -3px neccessary? */
+  width: calc(calc(50% - 0.5rem) - 3px);
+  margin-bottom: 1rem;
+}
+
+.card-container .card:nth-child(odd) {
+  margin-right: 1rem;
+}
+
+.card-container {
+  clear: both;
 }
 
 .card h3 {

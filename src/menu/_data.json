@@ -1,6 +1,6 @@
 {
   "title": "Menu",
-  "image": "/assets/images/16_9/food-being-passed.jpg",
+  "image": "food-being-passed",
   "pizza": {
     "path": "pizza",
     "title": "Pizza",
