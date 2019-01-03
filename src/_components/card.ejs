@@ -1,6 +1,6 @@
 <% if (url) { %>
   <a class="card" href="<%- url %>">
-    <img src="<%- image %>">
+    <jack-image image="<%- image %>" dimensions="4_3"></jack-image>
     <% if (title) { %>
       <h3><%- title %></h3>
     <% } %>
@@ -10,7 +10,7 @@
   </a>
 <% } else { %>
   <div class="card">
-    <img src="<%- image %>">
+    <jack-image image="<%- image %>" dimensions="4_3"></jack-image>
     <% if (title) { %>
       <h3><%- title %></h3>
     <% } %>
