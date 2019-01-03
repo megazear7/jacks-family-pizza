@@ -7,20 +7,21 @@ export default class JackImage extends HTMLElement {
     shadowRoot.innerHTML = this.getTemplate();
 
     const src = `/assets/images/${this.getDimensions()}/${this.getImage()}.jpg`;
+    this.div = this.shadowRoot.querySelector('div');
     this.img = this.shadowRoot.querySelector('img');
     this.img.src = src;
     this.img.complete
 
     if (this.img.complete) {
-      onLoaded()
+      onLoaded();
     } else {
       this.img.addEventListener('load', () => this.onLoaded());
-      this.img.addEventListener('error', () => alert('error'));
+      this.img.addEventListener('error', () => console.error('error loading jack-image: ' + src));
     }
   }
 
   onLoaded() {
-    this.img.classList.remove('loading');
+    this.div.classList.remove('loading');
   }
 
   getImage() {
@@ -36,15 +37,16 @@ export default class JackImage extends HTMLElement {
       <style>
         img {
           width: 100%;
-          height: 100%;
-          background-color: grey;
         }
 
-        img.loading {
+        div.loading {
           padding-bottom: calc(100% * (3/4));
+          background-color: grey;
         }
       </style>
-      <img class="loading">
+      <div class="loading">
+        <img>
+      </div>
     `
   }
 }
