@@ -1,2 +1,4 @@
+import JackImage from '/elements/image/image.js';
+
 document.addEventListener('DOMContentLoaded', () =>
   document.querySelector('body').style.paddingBottom = document.querySelector('.footer').offsetHeight + 'px');
